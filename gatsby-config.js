@@ -3,5 +3,14 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "my-gallery",
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ["Montserrat"],
+        }
+      }
+    }
+  ],
 };
